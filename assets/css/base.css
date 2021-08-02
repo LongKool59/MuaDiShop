@@ -53,21 +53,46 @@ html {
 
 .modal__body {
   position: relative;
-  background-color: var(--white-color);
   display: block;
   margin: auto;
 }
 
+/* Button style */
+
 .btn {
   min-width: 142px;
-  height: 36px;
+  height: 34px;
   text-decoration: none;
   border: none;
   border-radius: 2px;
   font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.btn--size-s {
+  height: 32px;
+  font-size: 1.2rem;
+  padding: 0 8px;
+}
+
+.btn.btn--normal:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .btn.btn--primary {
   color: var(--white-color);
   background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+  cursor: default;
+  background-color: #c3c3c3;
+  color: #949494;
 }
