@@ -40,7 +40,7 @@
 }
 
 .header__navbar-user-name {
-  margin-left: 8px;
+  margin-left: 4px;
   font-size: 1.4rem;
   font-weight: 500;
 }
@@ -82,6 +82,10 @@
 .header__navbar-user-item {
 }
 
+.header__navbar-user-item--separate {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .header__navbar-user-item a {
   text-decoration: none;
   color: var(--text-color);
@@ -101,7 +105,7 @@
   display: inline-block;
   color: var(--white-color);
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
@@ -137,6 +141,10 @@
 .header__navbar-icon-link {
   color: var(--white-color);
   text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+  margin-left: 3px;
 }
 
 .header__navbar-icon {
@@ -193,14 +201,15 @@
   display: none;
   position: absolute;
   top: 118%;
-  width: 404px;
-  background-color: var(--white-color);
   right: 0;
-  border: 1px solid #d3d3d3;
+  width: 404px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: default;
   user-select: none;
   -webkit-user-select: none;
-  transform-origin: calc(100% - 20px) top;
+  transform-origin: calc(100% - 32px) top;
   will-change: opacity, transform;
   animation: headerNotifyGrowth ease-in 0.2s;
   z-index: 1;
@@ -452,6 +461,11 @@
   width: 200px;
 }
 
+.header__logo-link {
+  text-decoration: none;
+  color: transparent;
+}
+
 .header__logo-img {
   width: 150px;
 }
@@ -527,10 +541,10 @@
 
 .header__search-option {
   position: absolute;
-  top: 124%;
+  top: 120%;
   right: 0;
-  list-style: none;
   width: 130px;
+  list-style: none;
   padding-left: 0;
   box-shadow: 0 1px 2px rgb(211, 211, 211);
   display: none;
@@ -652,7 +666,7 @@
 
 .header__cart-list {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 9px);
   right: -1px;
   background-color: var(--white-color);
   width: 400px;
