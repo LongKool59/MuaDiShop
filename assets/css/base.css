@@ -107,7 +107,7 @@ html {
   color: var(--text-color);
   background-color: var(--white-color);
   padding: 0 12px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
