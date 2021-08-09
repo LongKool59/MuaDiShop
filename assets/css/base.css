@@ -4,6 +4,7 @@
   --black-color: #000;
   --text-color: #333;
   --border-color: #dbdbdb;
+  --star-gold-color: #ffce3e;
 
   --header-height: 120px;
   --navbar-height: 34px;
@@ -19,7 +20,7 @@
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
@@ -181,7 +182,7 @@ html {
 }
 
 .select-input__list::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -9px;
   left: 0;
