@@ -952,10 +952,25 @@
 
 /* Product item */
 
+.home-product {
+  margin-bottom: 10px;
+}
+
 .home-product-item {
+  display: block;
+  text-decoration: none;
   position: relative;
   margin-top: 10px;
   background-color: var(--white-color);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: transform ease-in 0.1s;
+}
+
+.home-product-item:hover {
+  box-shadow: 0 1px 20px 0 rgb(0, 0, 0, 0.05);
+  transform: translateY(-1px);
 }
 
 .home-product-item__img {
