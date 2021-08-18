@@ -8,7 +8,9 @@
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-autoprefixer": "^8.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

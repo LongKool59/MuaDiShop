@@ -51,6 +51,16 @@ html {
   width: 20%;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -58,6 +68,16 @@ html {
 
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+
+  to {
+    transform: scale(var(--growth-to));
   }
 }
 
@@ -79,6 +99,7 @@ html {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
+  -webkit-animation: fadeIn linear 0.2s;
   animation: fadeIn linear 0.2s;
 }
 
@@ -88,6 +109,7 @@ html {
   position: relative;
   display: block;
   margin: auto;
+  -webkit-animation: growth linear 0.2s;
   animation: growth linear 0.2s;
 }
 
@@ -213,6 +235,7 @@ html {
 }
 
 .pagination-item--active .pagination-item__link:hover {
+  -webkit-filter: brightness(105%);
   filter: brightness(105%);
 }
 
