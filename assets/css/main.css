@@ -460,6 +460,15 @@
   margin: 0 8px;
 }
 
+.header__mobile-search {
+  padding: 6px 10px;
+}
+
+.header__mobile-search-icon {
+  font-size: 2.6rem;
+  color: var(--white-color);
+}
+
 .header__logo {
   width: 200px;
 }
@@ -467,6 +476,12 @@
 .header__logo-link {
   text-decoration: none;
   color: transparent;
+  display: block;
+  line-height: 0;
+}
+
+.header__search-checkbox:checked~.header__search {
+  display: flex;
 }
 
 .header__logo-img {
@@ -480,6 +495,7 @@
   background-color: var(--white-color);
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .header__search-input-wrap {
@@ -872,7 +888,7 @@
   margin-left: 4px;
   color: rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  transform: translateY(-16%)
+  transform: translateY(-12%)
 }
 
 .header__sort-icon i:first-child {
