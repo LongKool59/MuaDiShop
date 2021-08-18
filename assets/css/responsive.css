@@ -41,6 +41,10 @@
   .app__content {
     padding-top: 8px;
   }
+
+  .mobile-category {
+    display: block;
+  }
 }
 
 /* Tablet */
@@ -104,6 +108,14 @@
     box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
   }
 
+  .header__mobile-search {
+    display: block;
+  }
+
+  .header__logo-img {
+    width: 110px;
+  }
+
   .app__content {
     margin: 0 4px;
   }
@@ -117,4 +129,5 @@
     font-size: 1.6rem;
     min-width: 36px;
   }
+
 }

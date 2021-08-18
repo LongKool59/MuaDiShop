@@ -483,6 +483,7 @@
 
 .header__mobile-search {
   padding: 6px 10px;
+  display: none;
 }
 
 .header__mobile-search-icon {
@@ -1034,6 +1035,10 @@
 
 /* Mobile category */
 
+.mobile-category {
+  display: none;
+}
+
 .mobile-category__list {
   display: flex;
   list-style: none;
@@ -1079,7 +1084,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  padding: 0 4px;
+  padding: 0 6px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
